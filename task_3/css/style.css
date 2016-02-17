@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.container{
+    max-width: 1060px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, .4);
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px 45px 60px;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1 {
+    color: #333333;
+    font-size: 45px;
+}
+.menu{
+    margin: 40px 0px;
+    background: linear-gradient(to top, #5e5e5e, #454444);
+}
+
+.menu li{
+    display: inline-block;
+    line-height: 40px;
+    padding-right: 41px;
+    padding-left: 41px;
+    text-align: center;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.menu li:hover{
+    background: linear-gradient(to top, #4a4a4a, #2e2e2e);
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+}
+
+.menu li a{
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+    color: #fff;  
+}
+aside{
+    float:left;
+    width: 240px;
+}
+aside li {
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding-left: 22px;
+}
+aside li:last-child{
+    border-bottom:1px solid #ccc;
+}
+
+aside li:hover{
+    background-color: #f9f9f9;
+    padding-left: 35px;
+}
+aside li a{
+    color: #424242;
+}
+
+section{
+    float: right;
+    width: 680px;
+}
+.clearfix{
+    clear:both;
+}
+
+.image {
+    padding: 40px 0px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.desc{
+    padding: 39px 0px 60px 23px;
+    color: #2c2b2b;
+    }
+
+footer{
+    background: #e1e1e1;
+}
+.footer__menu ul{
+    float: left;
+}
+.footer__menu li{
+    display: inline-block;
+    line-height: 40px;
+    padding-right: 42px;
+    padding-left: 42px;
+    text-align: center;
+}
+
+.footer__menu li a{
+    color: #000;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+.footer__menu li a:hover{
+    text-decoration: underline;
+}
+    
+.copy {
+    float: right;
+    padding: 0 25px;
+    line-height: 40px;
+}
