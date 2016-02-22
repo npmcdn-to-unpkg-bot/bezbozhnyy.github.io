@@ -30,9 +30,9 @@ header{
  	color: #128aa7;
  }
 
-/*header a{
+header a{
     color: #128aa7;
- }*/
+ }
 
 .clearfix{
 	clear: both;
@@ -48,8 +48,7 @@ header{
 	width: 283px;
 	height: 165px;
 	line-height: 200px;
-    color: #128aa7;
-	text-align: center;
+ 	text-align: center;
     text-decoration: none;
 	background: url(../img/logo.png) right no-repeat;
 }
@@ -70,9 +69,6 @@ header{
 	font-size: 10px;
 	text-decoration: underline;
 	padding-left: 14px;
-}
-.country a{
-    color: #128aa7;
 }
 
 .country img{
