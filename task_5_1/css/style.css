@@ -1,0 +1,213 @@
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../fonts/HelveticaNeue.woff);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #ccc;
+    font-family: "HelveticaNeue";
+}
+body {
+    max-width: 1215px;
+    max-height: 1028px;
+    margin: 0 auto;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .8);
+}
+header {
+    height: 36px;
+    background-image: url(../img/head_bg.png);
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 36px;
+    align-items: center;
+}
+.nav li {
+    display: block;
+    line-height: 36px;
+    font-size: 14px;
+}
+.nav li:last-child {
+    margin-right: 20px;
+}
+.nav__main {
+    color: #60b5ed;
+    display: block;
+    text-decoration: none;
+    padding: 0 12px;
+    transition: all 0.1s ease-out;
+}
+.nav__main:hover {
+    background-color: #4eabda;
+    color: #fff;
+}
+.verline {
+    display: block;
+    height: 31px;
+    border-left: 1px solid #4eabda;
+    margin: 0 10px;
+}
+.autoriz {
+    display: block;
+    padding: 0 10px;
+    color: #60b5ed;
+    text-decoration: none;
+}
+.autoriz:hover {
+    background-color: #60b5ed;
+    color: #fff;
+}
+.decor {
+    text-decoration: underline;
+}
+.ofertas {
+    color: #fff;
+}
+.autoriz img {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+section {
+    background-image: url(../img/Background.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 1028px;
+    display: flex;
+}
+.form {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .6);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+    height: 613px;
+    margin: auto;
+    width: 560px;
+}
+.form__name {
+    display: block;
+    text-align: center;
+    line-height: 62px;
+    vertical-align: middle;
+    border-bottom: 2px solid #c0c6b8;
+    color: #fff;
+    font-size: 24px;
+}
+.fb_button {
+    width: 275px;
+    margin: 0 auto;
+    margin-top: 36px;
+}
+.fb_btn {
+    display: block;
+    margin: 0 auto;
+    width: 275px;
+    height: 35px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+    border-radius: 3px;
+    transition: box-shadow 0.1s ease-out;
+    background-image: url(../img/fb_button.png);
+    background-repeat: no-repeat;
+}
+.fb_btn img {
+    display: block;
+}
+.fb_btn:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .4);
+}
+.fb_btn:active {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+.form__separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 275px;
+    margin: 0 auto;
+    color: #999;
+}
+.line {
+    display: block;
+    height: 0px;
+    width: 120px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #666;
+}
+.line:before {
+    border-bottom: 3px solid red;
+}
+.form__create {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    width: 275px;
+    margin: 0 auto;
+    color: #fff;
+}
+.form__create input {
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid #4a4948;
+    line-height: 35px;
+    background-color: #000;
+    padding-left: 10px;
+    color: #fff;
+    transition: all 0.2s ease-out;
+    font-size: 14px;
+    font-family: "HelveticaNeue";
+}
+.form__create input:focus {
+    box-shadow: 0px 0px 8px 3px rgba(47, 123, 197, .77), inset 0 0 8px rgba(0, 0, 0, 0.4);
+    background-color: #1b5288;
+    color: white;
+    outline: none;
+    border-bottom: 1px solid #4eabda;
+}
+.form__create button {
+    width: 135px;
+    height: 35px;
+    margin: 10px auto;
+    border-radius: 3px;
+    background: linear-gradient(to top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .01), rgba(0, 0, 0, .01), transparent);
+    background-color: #4299d2;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .4);
+    transition: box-shadow 0.2s ease-out;
+    color: #fff;
+    font-weight: 700;
+}
+.form__create button:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .8);
+}
+.form__create button:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .8);
+}
+.form__footer {
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    width: 340px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+/*Cross- placeholder*/
+::-webkit-input-placeholder {
+    color: #fff;
+}
+::-moz-placeholder {
+    color: #fff;
+}
+:-moz-placeholder {
+    color: #fff;
+}
+:-ms-input-placeholder {
+    color: #fff;
+}
