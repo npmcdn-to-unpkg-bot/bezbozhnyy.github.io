@@ -76,6 +76,7 @@ section {
     background-image: url(../img/Background.jpg);
     background-repeat: no-repeat;
     background-position: left;
+    background-size: cover;
     height: 1028px;
     display: flex;
 }
