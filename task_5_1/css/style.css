@@ -11,8 +11,8 @@ html {
     font-family: "HelveticaNeue";
 }
 body {
-    max-width: 1215px;
-    max-height: 1028px;
+    /*max-width: 1215px;*/
+    /*max-height: 1028px;*/
     margin: 0 auto;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, .8);
 }
