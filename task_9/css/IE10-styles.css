@@ -1,0 +1,147 @@
+/* HEADER */
+.logo-box-img {
+    float: none;
+    display: inline-block;
+    padding: 70px 200px 150px 20px;
+}
+
+.header ul {
+    float: none;
+    display: inline-block;
+}
+
+.header li {
+    float: none;
+    display: inline;
+}
+
+.header ul li a {
+    display: inline-block;
+    color: #ffffff;
+    line-height: 32px;
+    height: 32px;
+    margin: 0 30px 0 0;
+}
+
+.header ul li a:hover{
+    height: 29px;
+    border-bottom: 3px solid #edbfff;
+}
+
+/* SLIDER */
+.slider-box {
+    /*background-color: rgb( 0, 0, 0);*/
+    background: url("../img/ie-header-bg.png");
+    max-height: 300px;
+    min-height: 250px;
+}
+
+.slider-circle {
+    height: 15px;
+    width: 15px;
+    /*border-radius: 7px;*/
+    background-color: rgb(104, 99, 110);
+    float: left;
+    margin: 0 2px;
+    cursor: pointer;
+
+}
+
+.slider-circle-white {
+    height: 11px;
+    width: 11px;
+    background-color: #ffffff;
+    /*border-radius: 6px;*/
+    position: absolute;
+    top: 2px;
+    left: 23px;
+}
+
+/* ABOUT COMPANY BLOCK */
+
+.about_company {
+    background-color: #745083;
+}
+
+.about_company__article a {
+    height: 30px;
+}
+
+.about_company__article a:hover {
+    height: 27px;
+    border-bottom: 3px solid #edbfff;
+}
+
+
+/* BLOG */
+
+.circles {
+    max-width: 80px;
+    margin: 0 auto;
+}
+
+.circle {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #f0f0f0;
+    height: 14px;
+    width: 14px;
+    /*border-radius: 7px;*/
+    float: left;
+    margin: 0 2px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.circle-point {
+    height: 11px;
+    width: 11px;
+    background-color: rgb(104, 99, 110);
+    /*border-radius: 6px;*/
+    top: 2px;
+    left: 2px;
+}
+
+/* FOOTER */
+
+.footer ul{
+    display: inline-block;
+}
+
+.footer li{
+    display: inline;
+}
+
+.footer ul li a {
+    display: inline-block;
+    color: #ffffff;
+    line-height: 32px;
+    margin: 0 60px 0 0;
+    font-size: 20px;
+}
+
+.footer ul li a:hover{
+    height: 29px;
+    border-bottom: 3px solid #edbfff;
+
+.footerContent {
+    float: none;
+    display: inline-block;
+    padding: 0 0 0 90px;
+}
+
+.footerContent {
+    float: right;
+}
+
+.footerContent p{
+    line-height: 32px;
+    font-size: 12px;
+    color: #ffffff;
+    /*text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);*/
+}
+
+.footerContent a {
+    text-transform: none;
+    color: #ffffff;
+}
