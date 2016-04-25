@@ -1,6 +1,29 @@
-var number = prompt ('Привет! Введите число которое хотите возвести в степень:', '');
-var degrees = prompt ('Введите желаемую степень', '');
+var x = prompt("Enter the number:","Number");
+var n = prompt("Enter the degree of:","Degree of");
 
-result = Math.pow(number, degrees);
-console.log('Yor degree number is '+ result);
-alert (number +' возведенное в степень ' +degrees +' = ' + result);
+if (x % 1 !== 0) {
+alert('The number of '+x+' is not supported, enter the integer');
+} else if (n % 1 !== 0){
+alert ('The degree of '+n+' is not supported, enter the integer');
+} else if (n < 0) {
+alert (negativeInvolution (x,n));
+} else {
+alert (positiveInvolution (x,n));
+}
+function positiveInvolution (x,n){
+var result = 1;
+for(i = 0; i < n; i++ ){
+	result *= x;
+}
+console.log ('Result = ', result);
+return result;
+}
+function negativeInvolution (x,n){
+var result = 1;
+for(i = 0; i < n; i++ ){
+	result *= x;
+}
+var fraction = (1 / result);
+console.log ('Result = ', fraction);
+return fraction;
+}
