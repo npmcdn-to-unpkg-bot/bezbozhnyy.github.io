@@ -1,0 +1,117 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #ccc;
+}
+
+.content{
+	height: 80vh;
+	width: 50%;
+	margin: 20px auto;
+	padding: 25px 15px;
+	border: 2px solid #aaa;
+	font-size: 14px;
+	background: #fff;
+}
+	/****************
+		tabs
+	****************/
+.wrapperMenu{
+	min-height: 320px;
+	width: auto;
+	padding: 5px;
+	border: 2px solid #aaaaaa;
+	border-radius: 10px;
+	margin-bottom: 70px;
+}
+
+.tabs .tabsTitle{
+	float: left;
+	margin: 2px;
+}
+
+.tabs a{
+	display: inline-block;
+	padding: 7px 22px;
+	border: 1px solid #aaa;
+	border-bottom: none;
+	border-radius: 5px 5px 0 0;
+	background: #eaeaea;
+	color: #322777;
+	text-decoration: none;
+}
+
+.tabsTitle a:hover{
+	border: 1px solid #aaa;
+	border-bottom: none;
+	background: #c2c1c1;
+	color: #000;
+}
+
+.tabsTitle.selected a,
+.tabsTitle.selected a:hover{
+	font-weight: 600;
+	background: #fff;
+	text-transform: uppercase;
+	border: none;
+}
+
+.tabsInclude{
+	clear: both;
+	padding: 24px;
+	line-height: 20px;
+}
+p{
+	padding: 10px;
+}
+
+	/****************
+		screentip
+	****************/
+.wrapper__form{
+	height: 190px;
+	width: 100%;
+	border: 1px solid #aaa;
+}
+form{
+	padding: 15px;
+}
+
+label{
+	display: inline-block;
+	min-width: 100px;
+}
+
+form span{
+	display: inline-block;
+	padding: 2px;
+	border: 1px solid blue;
+	border-radius: 10px;
+	opacity: 0;
+	transition: .4s ease-out;
+	line-height: 25px;
+	text-align: center;
+}
+
+.screentip_box input{
+	width: 200px;
+	height: 20px;
+	margin-bottom: 30px;
+	margin-right: 10px;
+}
+
+.button{
+	width: 100px;
+	line-height: 30px;
+	margin-top: 20px;
+	text-align: center;
+	border-radius: 5px;
+	border: 2px solid #aaa;
+}
+
+.button:hover{
+	border: 2px solid #aaa;
+	background: #c1c1c1;
+	color: #000;
+}
