@@ -1,0 +1,270 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+html, body, *{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background-color: #ddd;
+}
+.content{
+    margin: 0 auto;
+    width: 95%;
+}
+h1 {
+    font-size: 2.5rem;
+    color: #888;
+}
+
+.main-menu {
+    padding: 10px 0;
+    background-color: rgba(120,235,120,.6);
+}
+
+.horizontal-menu {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.main-menu a {
+    display: block;
+    margin: 0 12px;
+    padding: 0 12px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.main-menu a:hover {
+    color: gray;
+}
+
+.horizontal-menu a {
+    font-size: 1.1rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown > a:after {
+    content: " \25BE";
+}
+.submenu {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    width: 450px;
+    padding: 0 10px;
+    background-color: black;
+    z-index: 1;
+}
+
+.submenu>li {
+    display: block;
+    border-bottom: 1px solid rgb(0,0,0);
+}
+.submenu>li:last-child {
+    border-bottom: 0;
+}
+
+.dropdown .dropdown > a:after {
+    content: " \25B8";
+    position: absolute;
+    right: 0;
+}
+
+.dropdown .dropdown > ul {
+    left: 200px;
+    top: 0px;
+}
+.dropdown .dropdown_1 > a:after {
+    content: " \25B8";
+    position: absolute;
+    right: 100;
+}
+
+.dropdown .dropdown_1 > ul {
+    left: 200px;
+    top: 0px;
+}
+.dropdown_1 .dropdown_2 > a:after {
+    content: " \25B8";
+    position: absolute;
+    right: 100;
+}
+
+.dropdown_1 .dropdown_2 > ul {
+    left: -430px;
+    top: 0px;
+}
+
+.car-wrapper{
+    position: relative;
+    margin: 20px auto;
+    width: 800px;
+    border: 3px solid #aaa;
+}
+.car-wrapper h1{
+    text-align: center;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.jcarousel ul {
+    position: relative;
+    width: 20000em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.jcarousel li {
+    float: left;
+}
+.jcarousel li img{
+    width: 100%;
+}
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 45%;
+    width: 75px;
+    height: 50px;
+    border-radius: 50px;
+    background: black;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.jcarousel-control-prev {
+    left: -100px;
+}
+
+.jcarousel-control-next {
+    right: -100px;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+.jcarousel-pagination {
+    margin-top: -30px;
+    text-align: center;
+}
+
+.jcarousel-random, .jcarousel-pagination a {
+    display: inline-block;
+    min-width: 14px;
+    margin-right: 5px;
+    padding: 3px;
+    border-radius: 14px;
+    background: #fff;
+    line-height: 14px;
+    color: #555;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    opacity: .7;
+}
+
+.jcarousel-pagination a.active {
+    position: relative;
+    background: #555;
+    color: #fff;
+    opacity: 1;
+}
+
+
+.jcarousel-random {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.sel-wrapper {
+    height: 50px;
+}
+
+.sel-wrapper .cusel {
+    width: 200px !important;
+    margin: 12px auto;
+    text-align: center;
+}
+
+/* Checkbox */
+.cb-wrapper {
+    height: 160px;
+    padding-top: 10px;
+}
+.customCheckBox {
+    margin: 5px 10px;
+}
+.customCheckBox-css {
+    margin: 2px 10px;
+}
+.niceCheck {
+    display: inline-block;
+    overflow: hidden;
+	width: 17px;
+	height: 17px;
+	background: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    vertical-align: top;
+    cursor: pointer;
+}
+.customCheckBox label{
+    padding-right: 5px;
+    cursor: pointer;
+}
+.niceChecked {
+	background-position: 0 -17px;
+}
+.niceCheck input {
+	margin-left: -100px;
+}
+.niceCheckDisabled {
+    background-position: 0 -34px;
+    cursor: default;
+}
+/************ CheckBox css ********/
+
+
+.check-css[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.check-css+label {
+	cursor: pointer;
+}
+.check-css+label:before {
+	content: " ";
+    position: relative;
+	display: inline-block;
+    top: 3px;
+	width: 17px;
+	height: 17px;
+    margin-right: 5px;
+	background: url(../img/sprite.png);
+}
+.check-css[type=checkbox]:checked + label:before {
+    background-position: 0 -17px;
+}
+.check-css[type=checkbox]:disabled + label:before {
+    background-position: 0 -34px;
+    cursor: default;
+}
