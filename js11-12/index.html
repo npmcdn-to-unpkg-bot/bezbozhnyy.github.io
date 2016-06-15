@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home Task JavaScript 11-12</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/lodash/4.11.2/lodash.min.js"></script>
+	<script src="js/jQuery.carousel.js"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/main.js"></script>
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- carousel -->
+	<div class="carousel-wrapp">
+		<div class="carousel clearfix">
+			<div class="arrow leftArrow">Left</div>
+			<div class="hide clearfix">
+				<ul class="carouselSlides clearfix">
+					<li class="carouselSlide">
+						<img class="carouselImg" src="img/img_1.jpg" alt="picture1">
+						<p class="slideText">Slide 1</p>
+					</li>
+					<li class="carouselSlide">
+						<img class="carouselImg" src="img/img_2.jpg" alt="picture2">
+						<p class="slideText">Slide 2</p>
+					</li>
+					<li class="carouselSlide">
+						<img class="carouselImg" src="img/img_3.jpg" alt="picture3">
+						<p class="slideText">Slide 3</p>
+					</li>
+					<li class="carouselSlide">
+						<img class="carouselImg" src="img/img_4.jpg" alt="picture4">
+						<p class="slideText">Slide 4</p>
+					</li>
+					<li class="carouselSlide">
+						<img class="carouselImg" src="img/img_5.jpg" alt="picture5">
+						<p class="slideText">Slide 5</p>
+					</li>
+					<li class="carouselSlide">
+						<img class="carouselImg" src="img/img_6.jpg" alt="picture6">
+						<p class="slideText">Slide 6</p>
+					</li>
+					<li class="carouselSlide">
+						<img class="carouselImg" src="img/img_7.jpg" alt="picture7">
+						<p class="slideText">Slide 7</p>
+					</li>
+					<li class="carouselSlide">
+						<img class="carouselImg" src="img/img_8.jpg" alt="picture8">
+						<p class="slideText">Slide 8</p>
+					</li>
+					<li class="carouselSlide">
+						<img class="carouselImg" src="img/img_9.jpg" alt="picture9">
+						<p class="slideText">Slide 9</p>
+					</li>
+					<li class="carouselSlide">
+						<img class="carouselImg" src="img/img_10.jpg" alt="picture10">
+						<p class="slideText">Slide 10</p
+					></li>
+					<li class="carouselSlide">
+						<img class="carouselImg" src="img/img_11.jpg" alt="picture11">
+						<p class="slideText">Slide 11</p
+					></li>
+					<li class="carouselSlide">
+						<img class="carouselImg" src="img/img_12.jpg" alt="picture12">
+						<p class="slideText">Slide 12</p
+					></li>
+				</ul>
+			</div>
+			<div class="arrow rightArrow">Right</div>
+		</div>
+	</div>
+	<!-- end carousel -->
+	<script type="text/html" class="user-profile">
+		<div class="profile-wrapp">
+			<div class="aboutMe">
+				<h2><%= lfname %></h2>
+				<img src="<%= photo %>" alt="my photo">
+				<p><%= prevJob %></p>
+				<hr>
+			</div>
+			<div class="why">
+				<p><%= goal_cources %></p>
+				<ul>
+					<li><%= whyDo1 %></li>
+					<li><%= whyDo2 %></li>
+					<li><%= whyDo3 %></li>
+				</ul>
+				<hr>
+			</div>
+			<div class="contacts">
+				<p>Контактный телефон:<br><%= tel %></p>
+				<p>Профиль в соц. сетях:<br><a href="<%= fb %>" target="_blank">FaceBook</a></p>
+				<hr>
+			</div>
+			<div class="feedback">
+				<p>My feedback:</p>
+				<p><%= feadback %></p>
+			</div>
+		</div>
+	</script>
+</body>
+</html>
