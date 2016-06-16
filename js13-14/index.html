@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Task JavaScript 13-14</title>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tmpl.js"></script>
+</head>
+<body>
+<form class="testForm">
+    <header class="test__header">
+        <h1 class="test__name">Test on programming</h1>
+    </header>
+<script type="text/tmpl" id="test">
+                <% for(var i=0; i < data.length; i++) { %>
+                <article class="questions">
+                        <div class="questions__header">
+                            <h3><%= data[i].question %></h3>
+                        </div>
+                    <% for(var j=0; j < data[i].options.length; j++) { %>
+                        <% if (data[i].multiReturn){ %>
+                            <div class="answer">
+                                <input type="checkBox" id="<%= data[i].nameOfElements + '.' + j %>"/>
+                                <label class="questions__label"for="<%= data[i].nameOfElements + '.' + j %>"><%= data[i].options[j] %></label>
+                            </div>
+                        <% }else{ %>
+                            <div class="answer">
+                                <input type="radio" name="<%=data[i].nameOfElements%>" id="<%= data[i].nameOfElements + '.' + j %>"/>
+                                <label for="<%= data[i].nameOfElements + '.' + j %>"><%= data[i].options[j] %></label>
+                            </div>
+                        <% }; %>
+                        <% }; %>
+                </article>
+                <hr/>
+                <% }; %>
+                <input type="submit" class="submit" value="Проверить мои результаты"/>
+</script>
+</form>
+    <script type="text/tmpl" id="result">
+        <div class="overlay">
+            <div class="modal">
+                <h3>Results</h3>
+                <% for(var i=0; i < data.length; i++) { %>
+                   <p><%= data[i] %></p>
+                <% }; %>
+                <button>OK</button>
+            </div>
+        </div>
+    </script>
+</body>
+</html>
