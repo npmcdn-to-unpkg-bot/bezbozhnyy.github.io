@@ -1,0 +1,15 @@
+body {
+	background-color: #ddd;
+}
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40vh;
+}
+.search {
+    margin: 0 auto;
+    width: 30%;
+}
+input[type=image]{
+	background: blue !important;
+}
