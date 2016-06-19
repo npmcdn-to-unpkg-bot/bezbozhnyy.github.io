@@ -1,13 +1,13 @@
-var autoprefix = require( 'gulp-autoprefixer' );
-var concat 		 = require( 'gulp-concat'			  );
-var cssnano    = require( 'gulp-cssnano'      );
-var gulp       = require( 'gulp'              );
-var modernizr  = require( 'gulp-modernizr'    );
-var notify     = require( 'gulp-notify'       );
-var plumber    = require( 'gulp-plumber'      );
-var sass       = require( 'gulp-sass'         );
-var sourcemaps = require( 'gulp-sourcemaps'   );
-var uglify     = require( 'gulp-uglify'       );
+var autoprefix 	= require( 'gulp-autoprefixer' );
+var concat		= require( 'gulp-concat');
+var cssnano    	= require( 'gulp-cssnano'      );
+var gulp       	= require( 'gulp'              );
+var modernizr  	= require( 'gulp-modernizr'    );
+var notify     	= require( 'gulp-notify'       );
+var plumber    	= require( 'gulp-plumber'      );
+var sass       	= require( 'gulp-sass'         );
+var sourcemaps 	= require( 'gulp-sourcemaps'   );
+var uglify     	= require( 'gulp-uglify'       );
 
 
 function onError( error ){
@@ -47,21 +47,6 @@ gulp.task( 'javascript-static', function(){
 			message: "JavaScript Static minified"
 		}))
 })
-
-// gulp.task( 'javascript-concat', function(){
-// 	return gulp.src( 'library/js/src-concat/*.js')
-// 		.pipe( plumber( { errorHandler: onError } ) )
-// 		.pipe( sourcemaps.init()                    )
-// 		.pipe( concat( 'mangrove-custom.js' )		  	)
-// 		.pipe( uglify()                             )
-// 		.pipe( sourcemaps.write( '../maps' )        )
-// 		.pipe( gulp.dest( 'library/js/min' )        )
-// 		.pipe( notify( {
-// 			title: "Gulp JavaScript Concatonated",
-// 			subtitle: "Success JS Concatonated",
-// 			message: "JavaScript Minified & Concatonated"
-// 		}))
-// })
 
 gulp.task( 'modernizr', ['javascript-static'], function(){
 	/* This detects Modernizr features used in .js files in /js and

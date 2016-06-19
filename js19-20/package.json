@@ -1,8 +1,6 @@
 {
-  "name": "mangrove-web",
+  "name": "HomeTask JS",
   "version": "1.0.0",
-  "description": "WordPress theme by Mangrove Web Development",
-  "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
@@ -21,7 +19,6 @@
   "repository": {
     "type": "git"
   },
-  "author": "Mangrove Web",
-  "private": true,
-  "homepage": "https://mangrove-web.com"
+  "author": "Vladimir Web",
+  "private": true
 }
